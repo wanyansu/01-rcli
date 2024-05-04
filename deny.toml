@@ -59,15 +59,16 @@ no-default-features = false
 # This option can be overridden via `--feature-depth` on the cmd line
 feature-depth = 1
 
-# This section is considered when running `cargo deny check advisories`
+# This section is considered when running `cargo deny check advisoriea`
 # More documentation for the advisories section can be found here:
 # https://embarkstudios.github.io/cargo-deny/checks/advisories/cfg.html
 [advisories]
 # The path where the advisory databases are cloned/fetched into
 db-path = "~/.cargo/advisory-dbs"
 # The url(s) of the advisory databases to use
-db-urls = ["https://github.com/rustsec/advisory-db"]
+db-urls = ["https://gitee.com/tyr-rust-bootcamp-mirror/advisory-db.git"]
 # A list of advisory IDs to ignore. Note that ignored advisories will still
+vulnerability = "deny"
 # output a note when they are encountered.
 ignore = [
   #"RUSTSEC-0000-0000",
